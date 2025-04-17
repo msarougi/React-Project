@@ -2,7 +2,7 @@
   "users": [
     {
       "id": "1",
-      "name": "Leanne Graham",
+      "name": "Leanne Graha",
       "username": "Bret",
       "email": "Sincere@april.biz"
     },
@@ -17,6 +17,21 @@
       "name": "mgg.com",
       "username": "ddddgg@m.com",
       "email": "ddddggg@m.com"
+    },
+    {
+      "id": "6b4b",
+      "name": "layan",
+      "email": "layan1@gmail.com"
+    },
+    {
+      "id": "5e81",
+      "name": "rani",
+      "email": "rani@gmail.com"
+    },
+    {
+      "id": "ce6c",
+      "name": "rani",
+      "email": "rani@gmail.com"
     }
   ]
 }
