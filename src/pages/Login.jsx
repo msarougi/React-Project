@@ -6,7 +6,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 function Login() {
-  // use formData to store email and password as an object
+
   const [email, setEmail] = useState("");
 
   const [password, setPassword] = useState("");
@@ -28,7 +28,11 @@ function Login() {
       toast.error("Login Failed!");
       return;
     }
-    // send data to backend;
+
+
+
+
+
   };
 
   return (

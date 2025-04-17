@@ -6,22 +6,22 @@ import { toast } from "react-toastify";
 function UsersList() {
   const navigate = useNavigate();
 
-  //   users state
   const [users, setUsers] = useState([]);
 
-  // Fetch the users then store it in users state
+
   const fetchUsers = async () => {
     const response = await axios.get("http://localhost:3000/users");
     const usersData = response.data;
     setUsers(usersData);
   };
 
-  //   when users state changes, fetch users again
   useEffect(() => {
     fetchUsers();
   }, [users]);
 
-  //   Remove user functionality
+
+
+
   function handleRemoveUser(userId) {
     const removeUser = async () => {
       await axios.delete(`http://localhost:3000/users/${userId}`);
@@ -30,12 +30,11 @@ function UsersList() {
     removeUser();
   }
 
-  //   update user navigation
   function handleUpdateUser(id) {
     navigate(`/user/update/${id}`);
   }
 
-  //   Add user navigation
+  
   function handleAddUserClick() {
     navigate("/user/add");
   }

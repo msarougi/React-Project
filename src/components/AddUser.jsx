@@ -12,7 +12,7 @@ function AddUser() {
 
   const navigate = useNavigate();
 
-  // Handle Add user functionality
+  
   function handleAddUser(e) {
     e.preventDefault();
     const addUser = async () => {

@@ -7,6 +7,8 @@ import { ToastContainer } from "react-toastify";
 
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { CartContextProvider } from "./contexts/CartContext.jsx";
+
+
 import "../node_modules/bootstrap/dist/js/bootstrap.js";
 import Cart from "./pages/Cart.jsx";
 import Login from "./pages/Login.jsx";

@@ -4,13 +4,12 @@ import { useNavigate, useParams } from "react-router";
 import { toast } from "react-toastify"; 
 
 function UpdateUser() {
-  //   Extract id from url params
+  //   نستخرج id من البرامز
   const { id } = useParams();
   const navigate = useNavigate();
   const [userData, setUserData] = useState({});
 
-  //   Fetch user data based on id from params
-  //   And store it in userData state
+  
   useEffect(() => {
     const fetchUsers = async () => {
       const response = await axios.get(`http://localhost:3000/users/${id}`);
@@ -20,7 +19,7 @@ function UpdateUser() {
     fetchUsers();
   }, [id]);
 
-  //   Handle update user functionality
+  // التعديل
   async function handleUpdateUserSubmit(e) {
     e.preventDefault();
     await axios.put(`http://localhost:3000/users/${id}`, userData);
